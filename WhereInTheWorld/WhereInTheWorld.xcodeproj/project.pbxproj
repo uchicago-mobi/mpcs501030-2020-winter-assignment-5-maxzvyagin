@@ -13,6 +13,9 @@
 		4DC4A25323F1E07E00B2865E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC4A25123F1E07E00B2865E /* Main.storyboard */; };
 		4DC4A25523F1E08000B2865E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC4A25423F1E08000B2865E /* Assets.xcassets */; };
 		4DC4A25823F1E08000B2865E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC4A25623F1E08000B2865E /* LaunchScreen.storyboard */; };
+		4DC4A26023F2162A00B2865E /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DC4A25F23F2162A00B2865E /* Data.plist */; };
+		4DC4A26223F2461000B2865E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4A26123F2461000B2865E /* Place.swift */; };
+		4DC4A26423F32B2B00B2865E /* PlaceMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC4A26323F32B2B00B2865E /* PlaceMarkerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4DC4A25423F1E08000B2865E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DC4A25723F1E08000B2865E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DC4A25923F1E08000B2865E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC4A25F23F2162A00B2865E /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		4DC4A26123F2461000B2865E /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4DC4A26323F32B2B00B2865E /* PlaceMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMarkerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				4DC4A24B23F1E07E00B2865E /* AppDelegate.swift */,
 				4DC4A24D23F1E07E00B2865E /* SceneDelegate.swift */,
 				4DC4A24F23F1E07E00B2865E /* MapViewController.swift */,
+				4DC4A26123F2461000B2865E /* Place.swift */,
+				4DC4A26323F32B2B00B2865E /* PlaceMarkerView.swift */,
 				4DC4A25123F1E07E00B2865E /* Main.storyboard */,
+				4DC4A25F23F2162A00B2865E /* Data.plist */,
 				4DC4A25423F1E08000B2865E /* Assets.xcassets */,
 				4DC4A25623F1E08000B2865E /* LaunchScreen.storyboard */,
 				4DC4A25923F1E08000B2865E /* Info.plist */,
@@ -127,6 +136,7 @@
 			files = (
 				4DC4A25823F1E08000B2865E /* LaunchScreen.storyboard in Resources */,
 				4DC4A25523F1E08000B2865E /* Assets.xcassets in Resources */,
+				4DC4A26023F2162A00B2865E /* Data.plist in Resources */,
 				4DC4A25323F1E07E00B2865E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +150,9 @@
 			files = (
 				4DC4A25023F1E07E00B2865E /* MapViewController.swift in Sources */,
 				4DC4A24C23F1E07E00B2865E /* AppDelegate.swift in Sources */,
+				4DC4A26423F32B2B00B2865E /* PlaceMarkerView.swift in Sources */,
 				4DC4A24E23F1E07E00B2865E /* SceneDelegate.swift in Sources */,
+				4DC4A26223F2461000B2865E /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,23 +18,77 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EK0-IM-P1X">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </mapView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGF-SS-Zxd">
+                                <rect key="frame" x="20" y="64" width="374" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvp-q6-mnT">
+                                        <rect key="frame" x="8" y="8" width="312" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-lL-M4w">
+                                        <rect key="frame" x="328" y="20.5" width="30" height="34"/>
+                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jqx-mA-Jjl"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-Ib-lSG">
+                                        <rect key="frame" x="8" y="46" width="312" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gJF-lL-M4w" secondAttribute="trailing" constant="16" id="FaM-Qk-WTi"/>
+                                    <constraint firstAttribute="height" constant="75" id="StJ-fZ-wne"/>
+                                    <constraint firstItem="gJF-lL-M4w" firstAttribute="centerY" secondItem="hGF-SS-Zxd" secondAttribute="centerY" id="doa-Z8-RLA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hF4-oC-90d">
+                                <rect key="frame" x="20" y="787" width="374" height="75"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="C0l-tH-7Ac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <state key="normal" title="Favorites">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hGF-SS-Zxd" secondAttribute="trailing" constant="20" id="08M-xs-3tX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hF4-oC-90d" secondAttribute="trailing" constant="20" id="7dN-TH-VZS"/>
                             <constraint firstItem="EK0-IM-P1X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gcc-01-yag"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EK0-IM-P1X" secondAttribute="bottom" id="Jos-fD-F4x"/>
+                            <constraint firstItem="hF4-oC-90d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KpN-dT-E4A"/>
+                            <constraint firstItem="hF4-oC-90d" firstAttribute="bottom" secondItem="EK0-IM-P1X" secondAttribute="bottom" id="L2s-8V-rYY"/>
                             <constraint firstItem="EK0-IM-P1X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QMV-YY-lCd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EK0-IM-P1X" secondAttribute="trailing" id="XQl-dg-4Sj"/>
+                            <constraint firstItem="hGF-SS-Zxd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XjA-Ni-gpN"/>
+                            <constraint firstItem="hF4-oC-90d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aE9-5c-5au"/>
+                            <constraint firstItem="hGF-SS-Zxd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ssN-kR-NYd"/>
+                            <constraint firstItem="hGF-SS-Zxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vMt-Dv-EwV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="EK0-IM-P1X" id="giY-F6-ke6"/>
+                        <outlet property="starButton" destination="gJF-lL-M4w" id="KNK-f6-woi"/>
+                        <outlet property="viewDescription" destination="hMy-Ib-lSG" id="ebp-eU-bKC"/>
+                        <outlet property="viewLocation" destination="Yvp-q6-mnT" id="Bq9-mv-Mlw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="113"/>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
 </document>
