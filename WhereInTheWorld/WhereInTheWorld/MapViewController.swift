@@ -98,6 +98,8 @@ class MapViewController: UIViewController, PlacesFavoriteDelegate {
         self.viewDescription.text = selectedPlace?.longDescription
         self.starButton.isSelected = true
         
+        self.currentPlace = selectedPlace
+        
     }
     
     // source: https://iosdevcenters.blogspot.com/2017/11/what-is-protocol-how-to-pop-data-using.html

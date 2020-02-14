@@ -29,7 +29,9 @@ class FavoritesTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
